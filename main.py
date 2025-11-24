@@ -1,5 +1,6 @@
 import sys
-# ------------------------------
+
+# HUVUDMENY
 
 def main_menu():
     while True:
@@ -27,9 +28,9 @@ def main_menu():
             print("Ogiltigt val, försök igen.")
 
 
-# ------------------------------
-# 📚 BOKMENY
-# ------------------------------
+
+# BOKMENY
+
 
 def book_menu():
     while True:
@@ -57,7 +58,7 @@ def book_menu():
 
 def list_books():
     print("👉 (funktion kommer här) Visa alla böcker")
-    # Här lägger du SQLAlchemy-logik senare
+    # Här läggs SQLAlchemy-logiken för att lista böcker.
 
 
 def search_book():
@@ -72,9 +73,9 @@ def list_available_books():
     print("👉 (funktion kommer här) Visa tillgängliga böcker")
 
 
-# ------------------------------
-# 🧍 MEDLEMSMENY
-# ------------------------------
+
+#  MEDLEMSMENY
+
 
 def member_menu():
     while True:
@@ -96,9 +97,9 @@ def member_menu():
             return
 
 
-# ------------------------------
-# 📘 LÅNEMENY
-# ------------------------------
+
+#  LÅNEMENY
+
 
 def loan_menu():
     while True:
@@ -123,9 +124,9 @@ def loan_menu():
             return
 
 
-# ------------------------------
-# 📊 STATISTIKMENY
-# ------------------------------
+
+# STATISTIKMENY
+
 
 def stats_menu():
     while True:
@@ -147,9 +148,9 @@ def stats_menu():
             return
 
 
-# ------------------------------
-# 🚀 STARTA PROGRAMMET
-# ------------------------------
+
+#  STARTA PROGRAMMET
+
 
 if __name__ == "__main__":
     main_menu()
