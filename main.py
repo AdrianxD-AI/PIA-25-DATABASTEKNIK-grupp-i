@@ -1,4 +1,10 @@
 import sys
+from Book_manager import (
+    list_all_books,
+    search_book,
+    add_book,
+    list_available_books
+)
 
 # HUVUDMENY
 
@@ -44,7 +50,7 @@ def book_menu():
         choice = input("Välj ett alternativ: ")
 
         if choice == "1":
-            list_books()
+            list_all_books()
         elif choice == "2":
             search_book()
         elif choice == "3":
@@ -56,21 +62,7 @@ def book_menu():
         else:
             print("Ogiltigt val.")
 
-def list_books():
-    print("👉 (funktion kommer här) Visa alla böcker")
-    # Här läggs SQLAlchemy-logiken för att lista böcker.
 
-
-def search_book():
-    print("👉 (funktion kommer här) Sök efter bok")
-
-
-def add_book():
-    print("👉 (funktion kommer här) Lägg till ny bok")
-
-
-def list_available_books():
-    print("👉 (funktion kommer här) Visa tillgängliga böcker")
 
 
 
